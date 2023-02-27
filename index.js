@@ -1,9 +1,15 @@
 const express = require('express');
 const expressEjsLayouts = require('express-ejs-layouts');
 const port = 8000;
-
+const cookieParser = require('cookie-parser');
 const app = express();
 
+const db = require('./config/mongoose');
+const bodyParser = require('body-parser');
+
+
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(cookieParser());
 
 //set view engine
 app.set('view engine','ejs');
