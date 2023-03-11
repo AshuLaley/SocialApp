@@ -2,6 +2,11 @@ const User = require('../models/user')
 
 
 module.exports.profile = function(req,res){
+        
+        if(!req.isAuthenticated()){
+        return res.redirect('/users/log-in');
+        }
+
         return res.render('user_profile',{
             title: 'User Profile'
         })

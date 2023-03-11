@@ -1,9 +1,7 @@
-body{
-    margin:0px;
-    text-align: center;
-    background-color: rgb(123, 123, 123);
-}
-
-h1{
-    color: rgb(255, 196, 0);
-}
+body {
+  margin: 0px;
+  background-color: #c9d9dc;
+  font-family: Montserrat; }
+  body #layout-main {
+    height: 90vh;
+    margin-left: 10px; }
